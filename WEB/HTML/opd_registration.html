@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPD Registration - Medcare</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <a href="html/index.html" class="logo"><i class="fas fa-heartbeat"></i> medcare.</a>
+        <nav class="navbar">
+            <a href="html/index.html">Home</a>
+            <a href="html/about.html">About</a>
+            <a href="html/registration.html">Registration</a>
+            <a href="html/search.html">Patient Information</a>
+            <a href="html/billing.html">Billing</a>
+        </nav>
+        <div id="menu-btn" class="fas fa-bars"></div>
+    </header>
+
+    <div class="container">
+        <div class="registration-form">
+            <h2>OPD Registration Form</h2>
+            <form action="../php/opd_registration.php" method="POST">
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname" required>
+                <label for="mname">Middle Name:</label>
+                <input type="text" id="mname" name="mname">
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lname" required>
+                <label for="gender">Gender:</label>
+                <input type="text" id="gender" name="gender" required>
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+                <label for="mobileNo">Mobile Number:</label>
+                <input type="text" id="mobileNo" name="mobileNo" required>
+                <label for="specialization">Specialization:</label>
+                <input type="text" id="specialization" name="specialization" required>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

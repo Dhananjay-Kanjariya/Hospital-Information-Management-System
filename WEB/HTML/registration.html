@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration - Medcare</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script>
+        function showRegistrationForm() {
+            var selectedType = document.getElementById("registrationType").value;
+            if (selectedType == "opd") {
+                window.location.href = "html/opd_registration.html";
+            } else if (selectedType == "normal") {
+                window.location.href = "html/normal_registration.html";
+            } else if (selectedType == "pre") {
+                window.location.href = "html/pre_registration.html";
+            } else if (selectedType == "emergency") {
+                window.location.href = "html/emergency_registration.html";
+            }
+        }
+    </script>
+</head>
+<body>
+    <header class="header">
+        <a href="html/index.html" class="logo"><i class="fas fa-heartbeat"></i> medcare.</a>
+        <nav class="navbar">
+            <a href="html/index.html">Home</a>
+            <a href="html/about.html">About</a>
+            <a href="html/registration.html">Registration</a>
+            <a href="html/search.html">Patient Information</a>
+            <a href="html/billing.html">Billing</a>
+        </nav>
+        <div id="menu-btn" class="fas fa-bars"></div>
+    </header>
+
+    <div class="container">
+        <div class="registration-type">
+            <h1>Registration Form</h1>
+            <label>Select Registration Type:</label>
+            <select id="registrationType" onchange="showRegistrationForm()">
+                <option value="normal">Normal</option>
+                <option value="pre">Pre</option>
+                <option value="emergency">Emergency</option>
+                <option value="opd">OPD</option>
+            </select>
+        </div>
+    </div>
+</body>
+</html>

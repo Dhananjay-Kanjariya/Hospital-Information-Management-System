@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Registration - Medcare</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo"><i class="fas fa-heartbeat"></i> medcare.</a>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="registration.html">Registration</a>
+            <a href="search.html">Patient Information</a>
+            <a href="billing.html">Billing</a>
+        </nav>
+        <div id="menu-btn" class="fas fa-bars"></div>
+    </header>
+
+    <div class="container">
+        <div class="registration-form">
+            <h2>Emergency Registration Form</h2>
+            <form action="php/emergency_registration.php" method="POST">
+                <label for="emergencyFName">First Name:</label>
+                <input type="text" id="emergencyFName" name="emergencyFName" required>
+                <label for="emergencyMName">Middle Name:</label>
+                <input type="text" id="emergencyMName" name="emergencyMName">
+                <label for="emergencyLName">Last Name:</label>
+                <input type="text" id="emergencyLName" name="emergencyLName" required>
+                <label for="emergencyGender">Gender:</label>
+                <input type="text" id="emergencyGender" name="emergencyGender" required>
+                <label for="emergencyDOB">Date of Birth:</label>
+                <input type="date" id="emergencyDOB" name="emergencyDOB" required>
+                <label for="emergencyBGroup">Blood Group:</label>
+                <select id="emergencyBGroup" name="emergencyBGroup" required>
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                </select>
+                <label for="emergencyIdentificationMark">Identification Mark:</label>
+                <input type="text" id="emergencyIdentificationMark" name="emergencyIdentificationMark" required>
+                <label for="emergencyIDCard">ID Card:</label>
+                <select id="emergencyIDCard" name="emergencyIDCard" required>
+                    <option value="Aadhar Card">Aadhar Card</option>
+                    <option value="Driving Licence">Driving Licence</option>
+                    <option value="Passport">Passport</option>
+                    <option value="PAN Card">PAN Card</option>
+                </select>
+                <label for="emergencyIDNumber">ID Number:</label>
+                <input type="text" id="emergencyIDNumber" name="emergencyIDNumber" required>
+                <label for="emergencyAddress">Address:</label>
+                <textarea id="emergencyAddress" name="emergencyAddress" required></textarea>
+                <label for="emergencyMobileNumber">Mobile Number:</label>
+                <input type="text" id="emergencyMobileNumber" name="emergencyMobileNumber" required>
+                <label for="emergencyRoomName">Room Name:</label>
+                <input type="text" id="emergencyRoomName" name="emergencyRoomName" required>
+                <label for="emergencySymptoms">Symptoms:</label>
+                <textarea id="emergencySymptoms" name="emergencySymptoms" required></textarea>
+                <label for="emergencyAccompanyingFName">Accompanying Person First Name:</label>
+                <input type="text" id="emergencyAccompanyingFName" name="emergencyAccompanyingFName" required>
+                <label for="emergencyAccompanyingMName">Accompanying Person Middle Name:</label>
+                <input type="text" id="emergencyAccompanyingMName" name="emergencyAccompanyingMName">
+                <label for="emergencyAccompanyingLName">Accompanying Person Last Name:</label>
+                <input type="text" id="emergencyAccompanyingLName" name="emergencyAccompanyingLName" required>
+                <label for="emergencyAccompanyingMobileNumber">Accompanying Person Mobile Number:</label>
+                <input type="text" id="emergencyAccompanyingMobileNumber" name="emergencyAccompanyingMobileNumber" required>
+                <label for="emergencyAccompanyingGender">Accompanying Person Gender:</label>
+                <input type="text" id="emergencyAccompanyingGender" name="emergencyAccompanyingGender" required>
+                <label for="emergencyAccompanyingIDCard">Accompanying Person ID Card:</label>
+                <select id="emergencyAccompanyingIDCard" name="emergencyAccompanyingIDCard" required>
+                    <option value="Aadhar Card">Aadhar Card</option>
+                    <option value="Driving Licence">Driving Licence</option>
+                    <option value="Passport">Passport</option>
+                    <option value="PAN Card">PAN Card</option>
+                </select>
+                <label for="emergencyAccompanyingIDCardNumber">Accompanying Person ID Number:</label>
+                <input type="text" id="emergencyAccompanyingIDCardNumber" name="emergencyAccompanyingIDCardNumber" required>
+                <label for="emergencyAccompanyingRelation">Relation to Patient:</label>
+                <input type="text" id="emergencyAccompanyingRelation" name="emergencyAccompanyingRelation" required>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
