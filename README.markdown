@@ -1,0 +1,57 @@
+# Hospital Information Management System
+
+This repository contains the source code for a Hospital Information Management System developed as part of the CSE250 Database Management System course (Winter Semester 2024). The system facilitates patient registration, appointment scheduling, and billing management for a hospital, based on an entity-relationship (ER) model.
+
+## Project Structure
+```
+hospital-management-system/
+├── sql/
+│   ├── schema.sql                    # Database table creation scripts
+│   ├── data.sql                      # Sample data for tables
+│   └── procedures_and_triggers.sql   # Database procedures and triggers
+├── web/
+│   ├── css/
+│   │   └── styles.css                # CSS styling for the website
+│   ├── html/
+│   │   ├── index.html                # Main website page
+│   │   ├── registration.html         # Registration type selection page
+│   │   ├── opd_registration.html     # OPD registration form
+│   │   ├── normal_registration.html  # Normal registration form
+│   │   ├── pre_registration.html     # Pre-registration form
+│   │   ├── emergency_registration.html # Emergency registration form
+│   │   ├── about.html                # About page
+│   │   ├── search.html               # Patient information search page
+│   │   └── billing.html              # Billing page
+│   ├── php/
+│   │   ├── opd_registration.php      # PHP for OPD registration
+│   │   ├── normal_registration.php   # PHP for normal registration
+│   │   ├── pre_registration.php      # PHP for pre-registration
+│   │   └── emergency_registration.php # PHP for emergency registration
+└── README.md                         # Setup and usage instructions
+```
+
+## Setup Instructions
+1. **Database Setup**:
+   - Create a MySQL database named `hospital_db`.
+   - Execute `sql/schema.sql` to create the tables.
+   - Execute `sql/data.sql` to populate the tables with sample data.
+   - Execute `sql/procedures_and_triggers.sql` to set up stored procedures and triggers.
+
+2. **Web Server Setup**:
+   - Place the `web/` folder in your web server's root directory (e.g., `htdocs` for XAMPP).
+   - Ensure PHP and MySQL are installed and configured.
+   - Update the database connection details (server, username, password) in the PHP files (`web/php/*.php`) if necessary.
+
+3. **Access the Application**:
+   - Open a web browser and navigate to `http://localhost/web/html/index.html`.
+   - Use the navigation menu to access registration, patient information, and billing pages.
+
+## Notes
+- The ER diagram (`Department.png`) visualizes the database schema, including entities like `department`, `doctor`, `nurse`, `medicine`, `lab_test`, `disease`, `room`, and various registration tables, with their relationships and attributes.
+- The `search.html` and `billing.html` pages are placeholders and require backend logic to integrate with the database (e.g., calling `Normal_Reg` and `billing_Normal` procedures).
+- The system assumes a MySQL database and a PHP-enabled web server.
+- Font Awesome icons are referenced in HTML files; ensure an internet connection or include a local copy of Font Awesome for offline use.
+
+## Acknowledgments
+- Developed by [Your Name/Group Members].
+- Special thanks to Dr. Bharat Gadhvi and the HCG Group of Hospitals for their support.
