@@ -2,6 +2,11 @@
 
 This repository contains the source code for a Hospital Information Management System developed as part of the CSE250 Database Management System course (Winter Semester 2024). The system facilitates patient registration, appointment scheduling, and billing management for a hospital, based on an entity-relationship (ER) model.
 
+## ER Diagram
+The entity-relationship (ER) diagram illustrates the database schema, including entities such as `department`, `doctor`, `nurse`, `medicine`, `lab_test`, `disease`, `room`, and various registration tables, along with their relationships and attributes. View the ER diagram here:
+
+[ER Diagram](https://www.canva.com/design/DAGBtpKfFSc/Zt4WWm3Dq6rOreFLWTBx7g/edit?utm_content=DAGBtpKfFSc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+
 ## Project Structure
 ```
 hospital-management-system/
@@ -47,7 +52,7 @@ hospital-management-system/
    - Use the navigation menu to access registration, patient information, and billing pages.
 
 ## Notes
-- The ER diagram (`Department.png`) visualizes the database schema, including entities like `department`, `doctor`, `nurse`, `medicine`, `lab_test`, `disease`, `room`, and various registration tables, with their relationships and attributes.
+- The ER diagram is hosted on Canva and accessible via the link above. Ensure the link is set to "Anyone with the link can view" for accessibility.
 - The `search.html` and `billing.html` pages are placeholders and require backend logic to integrate with the database (e.g., calling `Normal_Reg` and `billing_Normal` procedures).
 - The system assumes a MySQL database and a PHP-enabled web server.
 - Font Awesome icons are referenced in HTML files; ensure an internet connection or include a local copy of Font Awesome for offline use.
