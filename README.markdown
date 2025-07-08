@@ -32,6 +32,7 @@ hospital-management-system/
 │   │   ├── normal_registration.php   # PHP for normal registration
 │   │   ├── pre_registration.php      # PHP for pre-registration
 │   │   └── emergency_registration.php # PHP for emergency registration
+|
 └── Project_Report.pdf                # Report of the Project
 └── README.markdown                         # Setup and usage instructions
 ``` 
