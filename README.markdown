@@ -60,5 +60,6 @@ hospital-management-system/
 - Font Awesome icons are referenced in HTML files; ensure an internet connection or include a local copy of Font Awesome for offline use.
 
 ## Acknowledgments
+- Thanks to Prof Shefali Naik for her support and guidance.
 - Developed by Shlok, Bhishmadevsinh and Dhananjay.
 - Special thanks to Dr. Bharat Gadhvi and the HCG Group of Hospitals for their support.
