@@ -10,14 +10,14 @@ The entity-relationship (ER) diagram illustrates the database schema, including 
 ## Project Structure
 ```
 hospital-management-system/
-├── sql/
+├── SQL/
 │   ├── schema.sql                    # Database table creation scripts
 │   ├── data.sql                      # Sample data for tables
 │   └── procedures_and_triggers.sql   # Database procedures and triggers
-├── web/
-│   ├── css/
+├── WEB/
+│   ├── CSS/
 │   │   └── styles.css                # CSS styling for the website
-│   ├── html/
+│   ├── HTML/
 │   │   ├── index.html                # Main website page
 │   │   ├── registration.html         # Registration type selection page
 │   │   ├── opd_registration.html     # OPD registration form
@@ -27,12 +27,12 @@ hospital-management-system/
 │   │   ├── about.html                # About page
 │   │   ├── search.html               # Patient information search page
 │   │   └── billing.html              # Billing page
-│   ├── php/
+│   ├── PHP/
 │   │   ├── opd_registration.php      # PHP for OPD registration
 │   │   ├── normal_registration.php   # PHP for normal registration
 │   │   ├── pre_registration.php      # PHP for pre-registration
 │   │   └── emergency_registration.php # PHP for emergency registration
-└── README.md                         # Setup and usage instructions
+└── README.markdown                         # Setup and usage instructions
 ```
 
 ## Setup Instructions
