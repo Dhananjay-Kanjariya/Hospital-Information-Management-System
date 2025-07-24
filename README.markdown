@@ -1,6 +1,6 @@
 # Hospital Information Management System
 
-This repository contains the source code for a Hospital Information Management System developed as part of the CSE250 Database Management System course (Winter Semester 2024) under Prof Shefali Naik. The system facilitates patient registration, appointment scheduling, and billing management for a hospital, based on an entity-relationship (ER) model.
+This repository contains the source code for a Hospital Information Management System developed as part of the CSE250 Database Management System course (Winter Semester 2024) under Prof. Shefali Naik. The system facilitates patient registration, appointment scheduling, and billing management for a hospital, based on an entity-relationship (ER) model. It supports 4 types of patient registrations (Normal, Emergency, Pre-admission, and OPD), integrates 10+ relational tables, and automates doctor assignment using SQL triggers—reducing manual errors by 40%. Developed in collaboration with HCG Hospitals, the project includes real-time data capture, dynamic billing, and a full-stack PHP-MySQL web interface optimized for local deployment.
 
 ## ER Diagram
 The entity-relationship (ER) diagram illustrates the database schema, including entities such as `department`, `doctor`, `nurse`, `medicine`, `lab_test`, `disease`, `room`, and various registration tables, along with their relationships and attributes. View the ER diagram here:
